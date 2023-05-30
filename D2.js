@@ -48,12 +48,13 @@ if (number3 === 8 || number2 === 8) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const shipping = 10
 let totalShoppingCart = 51
 let isShippingFree = totalShoppingCart > 50 ? true : false
 if (isShippingFree) {
   console.log("Hai diritto alla spedizione gratuita")
 } else {
-  console.log("Totale da pagare :", totalShoppingCart + 10, "euro")
+  console.log("Totale da pagare :", totalShoppingCart + shipping, "euro")
 }
 
 /* ESERCIZIO 6
@@ -69,7 +70,7 @@ if (isShippingFree2) {
 } else {
   console.log(
     "Totale da pagare :",
-    totalShoppingCart - saleBlackFd + 10,
+    totalShoppingCart - saleBlackFd + shipping,
     "euro"
   )
 }
@@ -131,8 +132,8 @@ if (number3 % 2 === 0) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-let val = 17
-if (val < 10) {
+let val = 4
+if (val < 10 && val >= 5) {
   console.log("Meno di 10")
 } else if (val < 5) {
   console.log("Meno di 5")
